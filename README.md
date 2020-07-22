@@ -1,6 +1,5 @@
 # TouchDragAndDrop
 
-## Description
 TouchDragAndDrop is a small polyfill class to use HTML5's Drag and Drop features on touch devices.
 It provides basic functionality and still lacks some features like supporting drag images. This is not useful for the usecases this polyfill was developed for, but I may add it in the future.
 
