@@ -34,6 +34,8 @@ Otherwise there will be an error and the polyfill will not work.
 
 **Make sure you call `e.preventDefault()` in as much drag-and-drop-related event listeners as possible, otherwise unwanted effects my occur. (Even without this polyfill it is a good advice).**
 
+***Be careful: This polyfill uses the `"use strict";` statement. If your code is not strict, this may end in complete chaos.***
+
 ## Thanks
 
 I used [Bernardo Castilho's `dragdroptouch`](https://github.com/Bernardo-Castilho/dragdroptouch) and his mentioned sources as inspiration. I developed the code on my own for use in another project, however both codes look pretty similar because they provide nearly the same functionality. Because of that, this mention exists here.
