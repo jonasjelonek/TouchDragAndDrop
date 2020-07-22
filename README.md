@@ -22,13 +22,13 @@ For complete explanation of how it works feel free to dive into the code.
 ## Usage
 
 This polyfill is designed as a module. Use the following example to import the module and initialize the polyfill.
-```
+```javascript
 import { TouchDragAndDrop } from "touchDragAndDrop.js"
 var touchDND = new TouchDragAndDrop();
 ```
 
 Make sure that the including JS file needs to be of type module when added to an HTML document, e.g.:
-```
+```html
 <script type="module" src="touchdnd-application.js"></script>
 ```
 Otherwise there will be an error and the polyfill will not work.
@@ -41,5 +41,5 @@ I used [Bernardo Castilho's `dragdroptouch`](https://github.com/Bernardo-Castilh
 
 ## License
 
-Right now no particular license for this. Do whatever you want with this polyfill as long as your purpose is also open-source, that's the deal!
+Right now no particular license for this. Do whatever you want with this polyfill as long as your purpose is also open-source and not commercial, that's the deal!
 (May be updated in the future)
