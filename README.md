@@ -13,7 +13,9 @@ TouchDragAndDrop adds global event listener for the following events:
 - touchcancel
 
 When `touchstart` is invoked, several actions are initiated depending on the touch parameters. Simple clicks, double clicks and holding for context menu can be recognized, otherwise drag process will be enabled.
+
 When `touchmove` is invoked, the registered event listener creates a drag copy if it does not exists and call `dragstart`, otherwise the position of the existing one will be updated. Additionally, it scans the elements below the current position and fires the events `dragenter`, `dragover` and `dragleave` depending on whether element below is a drop container.
+
 When `touchend` is invoked, it handles either click functionality or the drop process. The drop process just consists of triggering the events `drop` of the drop container (if there is one) and `dragend` of the source element. 
 
 For complete explanation of how it works feel free to dive into the code.
